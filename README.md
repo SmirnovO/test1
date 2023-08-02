@@ -1,5 +1,5 @@
-import os
-import json
+#import os
+#import json
 from sys import stderr, exit
 
 import tls_client
