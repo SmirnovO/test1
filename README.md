@@ -2,6 +2,6 @@
 #import json
 from sys import stderr, exit
 
-import tls_client
+#import tls_client
 import inquirer
 import xlsxwriter
