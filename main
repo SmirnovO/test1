@@ -33,7 +33,6 @@ QUERY2 =  2492847
 def is_exists(path: str) -> bool:
     return os.path.isfile(path)
 
-
 def filter_wallets1(wallet: dict) -> bool:
     if (wallet['ua'].lower() in WALLETS):
         return True
