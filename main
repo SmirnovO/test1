@@ -38,7 +38,7 @@ def filter_wallets1(wallet: dict) -> bool:
         return True
     return False
 
-def filter_wallets2(wallet: dict) -> bool:
+def filter_wallets_newsystem(wallet: dict) -> bool:
     try:
         if (wallet['address'].lower() in WALLETS):
             return True
@@ -65,7 +65,7 @@ def edit_dates2(wallets: list) -> None:
     for wallet in wallets:
         for i in wallet:
             if (i == 'eth_total' and wallet[i] != None):
-                wallet[i] = f'{round(wallet[i],4)} ({round(wallet[i]*1800,2)})'
+                wallet[i] = f'{round(wallet[i],4)} ({round(wallet[i]*3200,2)})'
             if (i == 'usd_total' and wallet[i] != None):
                 wallet[i] = round(wallet[i],2)
                 
