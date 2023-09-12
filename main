@@ -48,13 +48,7 @@ def filter_wallets_newsystem(wallet: dict) -> bool:
     return False
 
 
-def load_wallets() -> None:
-    global WALLETS
-    with open(file_wallets, 'r') as file:
-        WALLETS = [row.strip().lower() for row in file]
-
-
-def edit_dates1(wallets: list) -> None:
+def edit_dates(wallets: list) -> None:
     for wallet in wallets:
         for i in wallet:
             if (i in (['ibt'])):
