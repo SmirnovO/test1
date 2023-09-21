@@ -45,7 +45,7 @@ def filter_wallets_newsystem(wallet: dict) -> bool:
             return True
     except:
         return False
-    return False
+    return True
 
 
 def edit_dates(wallets: list) -> None:
